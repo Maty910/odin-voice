@@ -24,7 +24,7 @@
  * no los flaggee.
  */
 import { describe, expect, it } from "vitest"
-import { readdirSync, readFileSync } from "node:fs"
+import { existsSync, readdirSync, readFileSync } from "node:fs"
 import { dirname, join, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -343,8 +343,11 @@ function extractViolations(source: string, file: string): Violation[] {
 }
 
 /** entry fino + *.ts recursivos de src/ y test/ (excluye node_modules y scripts/). */
-function collectFiles(): string[] {
-  const files: string[] = [entryFile]
+function collectFiles(candidateEntryFile = entryFile): string[] {
+  const files: string[] = []
+  // El wrapper ../odin-voice.ts vive fuera del repo por diseño y puede no
+  // existir en clones o CI.
+  if (existsSync(candidateEntryFile)) files.push(candidateEntryFile)
   const walk = (dir: string): void => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       if (entry.name === "node_modules" || entry.name === "scripts") continue
@@ -456,6 +459,19 @@ describe("module-resolution guard (contrato Themis #3279)", () => {
     expect(collectFiles()).toContain(guardFile)
     const source = readFileSync(guardFile, "utf8")
     expect(extractViolations(source, guardFile)).toEqual([])
+  })
+
+  it("omite un entry externo inexistente del inventario", () => {
+    const missingEntry = resolve(packageRoot, "..", "odin-voice-entry-missing-for-test.ts")
+    expect(existsSync(missingEntry)).toBe(false)
+    expect(collectFiles(missingEntry)).not.toContain(missingEntry)
+
+    const files = collectFiles()
+    if (existsSync(entryFile)) {
+      expect(files).toContain(entryFile)
+    } else {
+      expect(files).not.toContain(entryFile)
+    }
   })
 
   it("todo specifier relativo del inventario termina en .ts", () => {
