@@ -1,0 +1,26 @@
+{
+  "name": "odin-voice",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Voice notifications for OpenCode V2 events.",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "voice",
+    "notifications"
+  ],
+  "author": "Mati",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maty910/odin-voice.git"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "generate-clips": "node scripts/generate-clips.ts"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  }
+}
