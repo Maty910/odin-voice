@@ -1,0 +1,81 @@
+{
+  "volume": 80,
+  "categories": {
+    "finished": {
+      "enabled": true,
+      "cooldownMs": 8000,
+      "clips": [
+        { "clip": "finished-1.mp3", "phrase": "[pause] It is done." },
+        { "clip": "finished-2.mp3", "phrase": "[exhales] Your turn." },
+        { "clip": "finished-3.mp3", "phrase": "[serious] The task is complete." },
+        { "clip": "finished-4.mp3", "phrase": "[exhales] All is in order. Your turn, Mati." },
+        { "clip": "finished-5.mp3", "phrase": "[murmurs] Nothing remains." },
+        { "clip": "finished-6.mp3", "phrase": "It is done, Mati." },
+        { "clip": "finished-flow-1.mp3", "phrase": "[long pause] All have returned. The flow is complete.", "scope": "flow" },
+        { "clip": "finished-flow-2.mp3", "phrase": "[exhales] The great work is done.", "scope": "flow" },
+        { "clip": "finished-flow-3.mp3", "phrase": "[exhales] The great work is done.", "scope": "flow" },
+        { "clip": "finished-flow-4.mp3", "phrase": "[dramatic] Every agent has returned. The flow stands complete.", "scope": "flow" },
+        { "clip": "finished-flow-5.mp3", "phrase": "[long pause] The great work is done.", "scope": "flow" },
+        { "clip": "finished-flow-6.mp3", "phrase": "[exhales] The flow has run its course.", "scope": "flow" },
+        { "clip": "finished-iris-1.mp3", "phrase": "[pause] Iris has charted the course.", "agent": "iris" },
+        { "clip": "finished-iris-3.mp3", "phrase": "[pause] The roadmap is drawn.", "agent": "iris" },
+        { "clip": "finished-hermes-1.mp3", "phrase": "[pause] Hermes has returned with the map.", "agent": "hermes" },
+        { "clip": "finished-hermes-2.mp3", "phrase": "[exhales] The paths of the code are laid bare.", "agent": "hermes" },
+        { "clip": "finished-hermes-3.mp3", "phrase": "[mysterious] Hermes has walked the code and returned.", "agent": "hermes" },
+        { "clip": "finished-hermes-4.mp3", "phrase": "[pause] The map is drawn. Nothing hides.", "agent": "hermes" },
+        { "clip": "finished-themis-1.mp3", "phrase": "[serious] Themis has delivered her judgment.", "agent": "themis" },
+        { "clip": "finished-themis-2.mp3", "phrase": "[serious] The contract is written.", "agent": "themis" },
+        { "clip": "finished-themis-3.mp3", "phrase": "[pause] Themis has weighed the law and delivered.", "agent": "themis" },
+        { "clip": "finished-themis-4.mp3", "phrase": "[dramatic] The judgement is sealed.", "agent": "themis" },
+        { "clip": "finished-thor-1.mp3", "phrase": "[pause] Thor's labor is complete.", "agent": "thor" },
+        { "clip": "finished-thor-2.mp3", "phrase": "[dramatic] The work is forged.", "agent": "thor" },
+        { "clip": "finished-thor-3.mp3", "phrase": "[serious] Thor has struck. The work stands.", "agent": "thor" },
+        { "clip": "finished-thor-4.mp3", "phrase": "[pause] The craft is complete.", "agent": "thor" },
+        { "clip": "finished-heimdall-1.mp3", "phrase": "[pause] Heimdall has spoken his verdict.", "agent": "heimdall" },
+        { "clip": "finished-heimdall-2.mp3", "phrase": "[dramatic] The gate has judged the work.", "agent": "heimdall" },
+        { "clip": "finished-heimdall-3.mp3", "phrase": "[dramatic] Heimdall stands watch. The work holds.", "agent": "heimdall" },
+        { "clip": "finished-heimdall-4.mp3", "phrase": "[pause] The verdict is given.", "agent": "heimdall" },
+        { "clip": "finished-nemesis-1.mp3", "phrase": "[chuckles] Nemesis has tested the armor. It holds.", "agent": "nemesis" },
+        { "clip": "finished-nemesis-2.mp3", "phrase": "[murmurs] The trials are complete.", "agent": "nemesis" },
+        { "clip": "finished-nemesis-3.mp3", "phrase": "[chuckles] Nemesis probed the armor. It did not break.", "agent": "nemesis" },
+        { "clip": "finished-nemesis-4.mp3", "phrase": "[playful] The trials failed to break it. Well done.", "agent": "nemesis" },
+        { "clip": "finished-saga-1.mp3", "phrase": "[pause] Saga has carried the message.", "agent": "saga" },
+        { "clip": "finished-saga-2.mp3", "phrase": "[murmurs] The telling is done.", "agent": "saga" },
+        { "clip": "finished-saga-3.mp3", "phrase": "[dramatic] Saga has spoken the tale.", "agent": "saga" },
+        { "clip": "finished-saga-4.mp3", "phrase": "[hopeful] The message is carried. It will be heard.", "agent": "saga" },
+        { "clip": "finished-athena-1.mp3", "phrase": "[thoughtful] Athena offers her wisdom.", "agent": "athena" }
+      ]
+    },
+    "error": {
+      "enabled": true,
+      "cooldownMs": 8000,
+      "clips": [
+        { "clip": "error-1.mp3", "phrase": "[sighs] Something is amiss." },
+        { "clip": "error-2.mp3", "phrase": "[pause] An error has occurred." },
+        { "clip": "error-3.mp3", "phrase": "[serious] Mati, an error has occurred." },
+        { "clip": "error-4.mp3", "phrase": "[sighs] Something failed, Mati. Your attention is needed." },
+        { "clip": "error-5.mp3", "phrase": "[confused] Oh, this was not expected." }
+      ]
+    },
+    "question": {
+      "enabled": true,
+      "cooldownMs": 8000,
+      "clips": [
+        { "clip": "question-1.mp3", "phrase": "[curious] I have a question." },
+        { "clip": "question-2.mp3", "phrase": "[pause] I would have your counsel." },
+        { "clip": "question-3.mp3", "phrase": "[curious] A question, if I may." },
+        { "clip": "question-4.mp3", "phrase": "[excited] Mati, before we continue: a question." }
+      ]
+    },
+    "permission": {
+      "enabled": true,
+      "cooldownMs": 8000,
+      "clips": [
+        { "clip": "permission-1.mp3", "phrase": "[pause] I require your leave." },
+        { "clip": "permission-2.mp3", "phrase": "[exhales] Your leave is required." },
+        { "clip": "permission-3.mp3", "phrase": "[serious] Your authorization is required, Mati." },
+        { "clip": "permission-4.mp3", "phrase": "[whispers] I may not proceed without you." }
+      ]
+    }
+  }
+}
