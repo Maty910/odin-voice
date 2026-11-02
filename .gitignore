@@ -2,7 +2,8 @@
 node_modules/
 
 # Generated audio clips
-clips/*.mp3
+clips/*
+!clips/.gitkeep
 
 # Logs
 *.log
